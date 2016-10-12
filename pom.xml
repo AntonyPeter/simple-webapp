@@ -9,7 +9,6 @@
     <artifactId>simple-parent</artifactId>
     <version>0.8-SNAPSHOT</version>
   </parent>
-
   <artifactId>simple-webapp</artifactId>
   <packaging>war</packaging>
   <name>Multi Chapter Simple Web Application Project</name>
@@ -35,4 +34,16 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>387e6564b86b-releases</name>
+      <url>http://192.168.99.100:8081/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>387e6564b86b-snapshots</name>
+      <url>http://192.168.99.100:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
